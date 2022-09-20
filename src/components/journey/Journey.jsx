@@ -11,7 +11,7 @@ const Journey = () => {
 
 
     return (
-        <section className="journey">
+        <section className="journey" id="journey">
             <h2 className="section__title">We are all on a journey</h2>
             <span className="section__subtitle">My personal journey</span>
 
