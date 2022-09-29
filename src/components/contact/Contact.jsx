@@ -7,7 +7,7 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        console.log()
         emailjs.sendForm('service_bqsbx9b', 'template_k9ca18c', form.current, 'EsJOWgPUty8MLAdkt')
             e.target.reset()
             alert("I got you. Thanks!");
@@ -19,14 +19,13 @@ const Contact = () => {
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
                     <div className="contact__info">
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">gkehdud@gmail.com</span>
-                            <a href="mailto:gkehdud@gmail.com.com" className="contact__button">Write me{" "}
+                            <a href="mailto:gkehdud@gmail.com.com" className="contact__button">Email me{" "}
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
@@ -54,22 +53,20 @@ const Contact = () => {
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Tell me your story</h3>
-
                     <form ref={form} onSubmit={sendEmail} className="contact__form" >
 
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input type="text" name="name"
                                 className="contact__form-input"
-                                placeholder='Insert your name' />
+                                placeholder='Your name' />
                         </div>
 
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Mail</label>
+                            <label className="contact__form-tag">Email</label>
                             <input type="email" name="email"
                                 className="contact__form-input"
-                                placeholder='Insert your email' />
+                                placeholder='Your email' />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
