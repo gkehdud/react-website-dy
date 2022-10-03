@@ -10,24 +10,24 @@ const Backend = () => {
                     <div className="skills__data">
                         <i className="bx bx-badge-check"></i>
                         <div>
-                            <h3 className="skills__name">PHP</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className="skills__name">VS(C#,WinForms)</h3>
+                            <span className="skills__level">Pre advanced</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
                         <i className="bx bx-badge-check"></i>
                         <div>
-                            <h3 className="skills__name">Node Js</h3>
-                            <span className="skills__level">IDK</span>
+                            <h3 className="skills__name">XCode</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
                         <i className="bx bx-badge-check"></i>
                         <div>
-                            <h3 className="skills__name">Python</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className="skills__name">Java</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>
@@ -37,24 +37,24 @@ const Backend = () => {
                     <div className="skills__data">
                         <i className="bx bx-badge-check"></i>
                         <div>
-                            <h3 className="skills__name">MySQL</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className="skills__name">MS SQL</h3>
+                            <span className="skills__level">Pre-advanced</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
                         <i className="bx bx-badge-check"></i>
                         <div>
-                            <h3 className="skills__name">SQL</h3>
-                            <span className="skills__level">Advanced</span>
+                            <h3 className="skills__name">mySQL</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
                         <i className="bx bx-badge-check"></i>
                         <div>
-                            <h3 className="skills__name">C#</h3>
-                            <span className="skills__level">Advanced</span>
+                            <h3 className="skills__name">C, PHP</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>

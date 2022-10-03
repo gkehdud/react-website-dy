@@ -5,8 +5,10 @@
 :root {
   --header-height: 3rem;
 
+
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(var(--hue-color), 69%, 61%);
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
@@ -14,6 +16,7 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -27,6 +30,7 @@
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
   --tiny-font-size: 0.625rem;
+  --tinier-font-size: 0.425rem;
 
   /*========== Font weight ==========*/
   --font-normal: 400;
@@ -94,6 +98,11 @@ h3 {
   font-weight: var(--font-semi-bold);
 }
 
+p {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
 ul {
   list-style: none;
 }
@@ -113,9 +122,35 @@ img {
   height: auto;
 }
 
+
+/*=============== Variables Dark theme ===============*/
+#light{
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --section-color : hsl(var(--hue), var(--sat), 98%);
+}
+#dark {
+  /*Dark Color mode HSL(hue, saturation, lightness)*/
+  --hue: 210;
+  --sat: 95%;
+  --first-color: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue), 8%, 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 20%);
+  --text-color: hsl(var(--hue), 8%, 85%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 10%);
+  --section-color : hsl(var(--hue), var(--sat), 10%);
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 0 2rem;
+  background-color: var(--section-color);
 }
 
 .section__title {
@@ -127,6 +162,7 @@ img {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
+  color: var(--text-color);
 }
 
 .section__title,
@@ -158,10 +194,12 @@ img {
 
 .button:hover {
   background-color: var(--title-color-dark);
+  color: var(--title-color);
 }
 
 .button__icon {
   margin-left: var(--mb-0-5);
+  color: var(--text-color);
 }
 
 .button--flex {
@@ -192,6 +230,7 @@ img {
   body {
     margin: 0 0 var(--header-height) 0;
   }
+
   .section {
     padding: 2rem 0 4rem;
   }
@@ -199,11 +238,12 @@ img {
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }
+  .button--flex{
+    width: 330px;
+  }
 }
 
-@media screen and (max-width: 576px) {
-
-}
+@media screen and (max-width: 576px) {}
 
 /* For small devices */
 @media screen and (max-width: 350px) {

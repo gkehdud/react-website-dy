@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -7,7 +7,8 @@
     background-color: var(--body-color);
 }
 
-.nav{
+
+.nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
     justify-content: space-between;
@@ -16,17 +17,17 @@
 }
 
 .nav__logo,
-.nav__toggle{
+.nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
-.nav__list{
+.nav__list {
     display: flex;
     column-gap: 2rem;
 }
 
-.nav__link{
+.nav__link {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,34 +37,63 @@
     transition: .3s;
 }
 
+.nav__menupanel {
+    justify-items: right;
+    display: flex;
+    align-items: center;
+}
+
 .nav__icon,
 .nav__close,
-.nav__toggle{
+.nav__toggle {
     display: none;
 }
 
+
 /*Active link*/
 .active-link,
-.nav__link:hover{
+.nav__link:hover {
     color: var(--title-color-dark);
 }
+
+.change-theme {
+    cursor: pointer;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    transition: color .3s;
+}
+
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+
+/*==================Theme change=================*/
+
+
+
 /*==================Change background header=================*/
-.scroll-header{
+.scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
+
 
 /*==================BREAKPOINTS=================*/
 /* For medium devices */
 @media screen and (max-width: 768px) {
-    .header{
+    .header {
         top: initial;
         bottom: 0;
     }
 
-    .nav{
+    .nav {
         height: var(--header-height);
     }
-    .nav__menu{
+
+    .nav__menu {
         position: fixed;
         bottom: -100%;
         left: 0;
@@ -74,50 +104,65 @@
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
-
     /*show Menu*/
-    .show-menu{
+    .show-menu {
         bottom: 0;
     }
-    .nav__list{
+    .nav__list {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-
-    .nav__icon{
+    .nav__icon {
         font-size: 1.2rem;
     }
-    .nav__close{
+    .nav__close {
         position: absolute;
-        right: 1.3rem;
+        right: 2.8rem;
         bottom: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);
-    }
-    .nav__close:hover{
+    } 
+
+    .change-theme {
+        margin-right: 1rem;
+        font-size: 1.15rem;
+        cursor: pointer;
+        color: var(--title-color);
+    } 
+
+    .nav__close:hover {
         color: var(--title-color-dark);
     }
-    .nav__toggle{
+
+    .nav__toggle {
         font-size: 1.1rem;
         cursor: pointer;
     }
 
     .nav__icon,
     .nav__close,
-    .nav__toggle{
+    .nav__toggle {
         display: block;
     }
-  }
-
-  /* For small devices */
+    .nav__menupanel{
+        display: contents;
+        align-items: right;
+        justify-content: right;
+    }
+}
+/* @media screen and (max-width: 576px) {
+    
+} */
+/* For small devices */
 @media screen and (max-width: 350px) {
-    .nav__menu{
+    .nav__menu {
         padding: 2rem 0.25rem 4rem;
     }
-    .nav__link{
+
+    .nav__link {
         column-gap: 0;
     }
-  }
-  
+    
+}

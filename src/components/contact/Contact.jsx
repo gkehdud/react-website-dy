@@ -1,16 +1,65 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+
 
 const Contact = () => {
     const form = useRef();
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [story, setStory] = useState();
+    const Swal = require('sweetalert2')
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log()
-        emailjs.sendForm('service_bqsbx9b', 'template_k9ca18c', form.current, 'EsJOWgPUty8MLAdkt')
-            e.target.reset()
-            alert("I got you. Thanks!");
+        console.log("name : " + name + " email : " + email + " story : " + story);
+
+        if (!name || !email || !story) {
+            // alert("Please input your valid name, email, story.");
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                text: 'Please input your valid name, email, story.',
+                showConfirmButton: true,
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            })
+        }
+        else {
+            emailjs.sendForm('service_bqsbx9b', 'template_k9ca18c', form.current, 'EsJOWgPUty8MLAdkt')
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                        // alert("I got you. Thanks!");
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            text: 'I got you. Thanks!',
+                            showConfirmButton: true,
+                            showClass: {
+                                popup: 'animate__animated animate__fadeInDown'
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__fadeOutUp'
+                            }
+                        })
+                        e.target.reset()
+                        setName('');
+                        setEmail('');
+                        setStory('');
+
+                    },
+                    (error) => {
+                        console.log(error.text);
+                        alert("FAILED...", error);
+                    });
+        }
+
     };
     return (
         <section className="contact section" id="contact">
@@ -59,24 +108,28 @@ const Contact = () => {
                             <label className="contact__form-tag">Name</label>
                             <input type="text" name="name"
                                 className="contact__form-input"
-                                placeholder='Your name' />
+                                placeholder='Your name'
+                                onChange={(e) => setName(e.target.value)}
+                            />
                         </div>
 
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Email</label>
                             <input type="email" name="email"
                                 className="contact__form-input"
-                                placeholder='Your email' />
+                                placeholder='Your email'
+                                onChange={(e) => setEmail(e.target.value)} />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Story</label>
                             <textarea name="story" cols="30" rows="10"
                                 className='contact__form-input'
-                                placeholder='Hello'></textarea>
+                                placeholder='Hello'
+                                onChange={(e) => setStory(e.target.value)}></textarea>
                         </div>
 
-                        <button href="#contact" className="button button--flex">
+                        <button href="#contact" /*disabled={!(name && email && story)}*/ className="button button--flex">
                             Send Message
                             <svg
                                 class="button__icon"

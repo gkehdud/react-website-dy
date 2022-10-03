@@ -1,10 +1,30 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import Smile from './smile.json';
+import lottie from 'lottie-web';
+import "./home.css";
 
 const Data = () => {
+
+    useEffect(() => {
+        console.log("Data useEffect")
+        lottie.loadAnimation({
+          container: document.querySelector("#smile"),
+          animationData: Smile,
+          renderer: "svg", // "canvas", "html"
+          loop: true, // boolean
+          autoplay: true, // boolean
+          rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+            className: "lottie-svg-class"
+          }
+        });
+      }, []);
+    
     return (
         <div className="home__data">
             <h1 className="home__title">
                 Doyoung Ha
+                {/* <span id='smile'></span> */}
                 <svg
                     width="36"
                     height="36"
@@ -55,8 +75,8 @@ const Data = () => {
                     ></path>
                 </svg>
             </h1>
-            <h3 className="home__subtitle">Full Stack Developer</h3>
-            <p className="home__description">blahblahblahblahblahblahblahblahblah</p>
+            <h3 className="home__subtitle">Backend Developer</h3>
+            {/* <p className="home__description">blahblahblahblahblahblahblahblahblah{"\n"}blahblahblahblahblahblahblahblahblah{"\n"}</p> */}
 
             <a href="#contact" className="button button--flex">
                 Say Hello
