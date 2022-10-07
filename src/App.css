@@ -23,6 +23,7 @@
 
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3.5rem;
+  --medium-font-size: 1.75rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -149,7 +150,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 2rem;
+  padding: 6rem 0 7rem;
   background-color: var(--section-color);
 }
 
@@ -227,33 +228,33 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-0-5);
+  }
+}
+
+@media screen and (max-width: 576px) {
   body {
     margin: 0 0 var(--header-height) 0;
   }
 
   .section {
-    padding: 2rem 0 4rem;
+    padding: 5rem 1rem 4rem;
   }
 
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }
   .button--flex{
-    width: 330px;
+    width: auto;
   }
 }
 
-@media screen and (max-width: 576px) {}
-
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 435px) {
   :root {
     --big-font-size: 2.25rem;
-  }
-
-  .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
   }
 }
 
@@ -261,10 +262,5 @@ img {
 @media screen and (max-width: 280px) {
   :root {
     --big-font-size: 1.5rem;
-  }
-
-  .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
   }
 }

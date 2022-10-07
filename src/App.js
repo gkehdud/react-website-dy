@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import "./App.css"
 import Header from "./components/header/Header";
 import Home from './components/home/Home';
@@ -8,6 +8,10 @@ import Journey from './components/journey/Journey';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Scrollup from './components/scrollup/Scrollup';
+import Game from './components/sudoku/games/Game';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 export const ThemeContext = createContext(null);
 
@@ -26,6 +30,11 @@ const App = () => {
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   }
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className='App' id={theme}>
@@ -64,7 +73,7 @@ const App = () => {
 
 
                   <li className='nav__item'>
-                    <a href="#post" className='nav__link' onClick={() => setActiveNav('#post')}>
+                    <a href="/post" className='nav__link' onClick={() => setActiveNav('#post')}>
                       <i className="uil uil-scenery nav__icon"></i>Post
                     </a>
                   </li>

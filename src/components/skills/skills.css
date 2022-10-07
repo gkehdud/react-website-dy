@@ -1,11 +1,5 @@
-.skills__section{
-    padding: 6rem 0 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--section-color);
-}
 .skills__container {
-    grid-template-columns: repeat(2, 410px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2.5rem;
     justify-content: center;
 }
@@ -116,3 +110,114 @@
 
 /* For tiny devices */
 @media screen and (max-width: 280px) {}
+
+.tagcloud {
+    font-size: 16px;
+  }
+  .tagcloud--item {
+    padding: 2px 4px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .tagcloud--item:hover {
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid #333;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 1 !important;
+    z-index: 100 !important;
+  }
+  .light .tagcloud--item {
+    color: #fff;
+  }
+  .light .tagcloud--item:hover {
+    background-color: rgba(255,255,255,.1);
+    border: 1px solid #fff;
+  }
+
+
+
+
+
+
+
+
+
+/* 
+  body {
+    font-family: sans-serif;
+   -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ font-smooth: always;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+   font-size: 3rem;
+   letter-spacing: 1px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   opacity: 0.5;
+}
+
+.app-outer {
+   align-items: center; 
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   left: 0;
+   padding: 20px 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.app-inner {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   max-width: 1000px;
+   width: 100%;
+}
+
+.tag-cloud {
+   flex: 1;
+}
+
+.tag-cloud > div {
+   transition: 1.4s;
+}
+
+.tag-item-wrapper {
+   cursor: pointer;
+}
+
+.tag-item-wrapper:hover {
+   z-index: 100;
+}
+
+.tag-item-wrapper:hover .tag-item-tooltip {
+   display: block;
+}
+
+.tag-item-tooltip {
+   background: #c01916;
+   color: white;
+   margin-top: 5px;
+ z-index: 100;
+ display: none;
+   padding: 15px;
+   font-size: 14px;
+   line-height: 1;
+   position: absolute;
+   min-width: 60px;
+   left: 50%;
+   transform: translateX(-50%);
+ text-align: center;
+} */

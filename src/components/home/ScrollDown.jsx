@@ -1,7 +1,7 @@
 import React from 'react'
-
 const ScrollDown = () => {
     return (
+        <div data-aos = "fade-right">
         <div className="home__scroll">
             <a href="#about" className="home__scroll-button button--flex">
                 <svg
@@ -43,6 +43,7 @@ const ScrollDown = () => {
                 <i class="uil uil-arrow-down home__scroll-arrow"></i>
             </a>
         </div >
+        </div>
     )
 }
 
