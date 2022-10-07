@@ -91,7 +91,7 @@ const Journey = () => {
                             <div className="journey__data">
                                 <div>
                                     <h3 className="journey__title">Full Stack Developer</h3>
-                                    <span className="journey__subtitle">US(LIC) - BCS International Corporation</span>
+                                    <span className="journey__subtitle">US(NY) - BCS International Corporation</span>
                                     <div className="journey__calender">
                                         <i className="uil uil-calendar-alt"></i> 2018 - 2022
                                     </div>

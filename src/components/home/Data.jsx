@@ -83,13 +83,13 @@ const Data = () => {
                     wrapper="b"
                     steps={[
                         ' a developer 💻',
-                        1500,
+                        2000,
                         ' Korean 🇰🇷',
-                        1500,
+                        2000,
                         ' a soccer player ⚽️(wannabe)',
-                        1500,
+                        2000,
                         ' living in NY 🌃',
-                        1500,
+                        2000,
                     ]}
                 />
             </h3>

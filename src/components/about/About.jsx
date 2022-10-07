@@ -28,7 +28,7 @@ const About = () => {
                 <div className="about__container container grid">
                     {/* <img src={AboutImg} alt="" className="about__img" /> */}
 
-                    <img data-aos="zoom-in-up" className="about__img" />
+                    <img className="about__img" />
                     <div className="about__data">
                         {/* <Info /> */}
 
