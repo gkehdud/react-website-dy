@@ -21,6 +21,7 @@
 
 .home__scroll {
     margin-left: 9.25rem;
+    margin-bottom: 5rem;
 }
 
 .lottie-svg-class {
@@ -31,11 +32,11 @@
 
 .home__social-icon {
     font-size: 1.2rem;
-    color: var(--title-color);
+    color: var(--section-color-point);
 }
 
 .home__social-icon:hover {
-    color: var(--title-color-dark);
+    color: var(--title-color);
 }
 
 .home__title {
@@ -120,7 +121,7 @@
 
 
 .wheel {
-    color: var(--title-color);
+    color: var(--section-color-point);
     animation: scroll 2s ease infinite;
 }
 
@@ -135,7 +136,7 @@
 }
 
 .home__scroll-mouse {
-    color: var(--title-color);
+    color: var(--section-color-point);
 }
 
 .home__scroll-name {

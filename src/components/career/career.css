@@ -1,0 +1,129 @@
+
+
+.career__content{
+    align-items: center;
+    justify-self: center;
+    row-gap: 3rem;
+    padding: 2rem;
+}
+
+.career__data{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    column-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.career__title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    
+}
+.career__subtitle{
+    font-size: var(--smaller-font-size);
+    display: inline-block;
+    margin-bottom: var(--mb-0-25);
+}
+.career__calender{
+    font-size: var(--smaller-font-size);
+}
+.career__datatext{
+    display: flex;
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(--title-color);
+    text-align: left;
+    cursor: pointer;
+}
+.career__datatext-underline{
+    display: flex;
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(--title-color);
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.career__description{
+    padding-bottom: 15px;
+    padding-left: 80px;
+    justify-self: left;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    
+    .career__description{
+        padding-left: 60px;
+    }
+    .career__button{
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+
+    .career__description{
+        padding-left: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+
+    .career__description{
+        padding-left: 10px;
+    }
+    .career__content{
+        padding: 0px;
+    }
+    .career__data{
+        padding: 0px;
+    }
+    .career__datatext{
+        font-size: var(--tiny-font-size);
+    }
+    .career__title{
+        font-size: var(--smaller-font-size);
+        
+    }
+    .career__subtitle{
+        font-size: var(--tiny-font-size);
+    }
+    .career__calender{
+        font-size: var(--tiny-font-size);
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .career__content{
+        padding: 0px;
+    }
+    .career__datatext{
+        font-size: var(--tinier-font-size);
+    }
+    .career__title{
+        font-size: var(--tiny-font-size);
+        
+    }
+    .career__subtitle{
+        font-size: var(--tinier-font-size);
+    }
+    .career__calender{
+        font-size: var(--tinier-font-size);
+    }
+  }
+  
+  /* For tiny devices */
+  @media screen and (max-width: 280px) {
+    
+  }
+  

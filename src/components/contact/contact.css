@@ -30,7 +30,7 @@
 }
 .contact__card-icon{
     font-size: 2rem;
-    color: var(--title-color);
+    color: var(--section-color-point);
     margin-bottom: var(--mb-0-25);
 }
 .contact__card-title,
@@ -46,18 +46,22 @@
     margin-bottom: var(--mb-0-75);
 }
 .contact__button{
-    color: var(--text-color);
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     column-gap: 0.25rem;
+    color: var(--button-color);
 }
 .contact__button-icon{
     font-size: 1rem;
     transition: 0.3s;
 }
-.contact__button:hover .contact__button-icon{
+.contact__button:hover {
+    transform: translate(0.25rem);
+    color: var(--button-color-hover);
+}
+.contact__button-icon{
     transform: translate(0.25rem);
 }
 .contact__form{

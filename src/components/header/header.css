@@ -53,7 +53,7 @@
 /*Active link*/
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    color: var(--section-color-point);
 }
 
 .change-theme {
@@ -133,7 +133,7 @@
     } 
 
     .nav__close:hover {
-        color: var(--title-color-dark);
+        color: var(--section-color-point);
     }
 
     .nav__toggle {

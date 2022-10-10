@@ -3,15 +3,21 @@ import "./App.css"
 import Header from "./components/header/Header";
 import Home from './components/home/Home';
 import About from './components/about/About';
+import Path from './components/path/Path';
 import Skills from './components/skills/Skills';
-import Journey from './components/journey/Journey';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Scrollup from './components/scrollup/Scrollup';
-import Game from './components/sudoku/games/Game';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+
+
+import Journey from './components/journey/Journey';
+import Journeys from './components/journeys/Journeys';
+import Career from './components/career/Career';
+import Game from './components/sudoku/games/Game';
+import LoadingPage from './LoadingPage';
 
 export const ThemeContext = createContext(null);
 
@@ -36,10 +42,12 @@ const App = () => {
   }, []);
 
   return (
+
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className='App' id={theme}>
         {/* <Header /> */}
         <header className='header'>
+        {/* <LoadingPage/> */}
           <nav className="nav container">
             <a href="index.html" className="nav__logo">
               Doyoung
@@ -60,11 +68,10 @@ const App = () => {
                   </li>
 
                   <li className='nav__item'>
-                    <a href="#journey" className='nav__link' onClick={() => setActiveNav('#journey')}>
-                      <i className="uil uil-briefcase-alt nav__icon"></i>Journey
+                    <a href="#path" className='nav__link' onClick={() => setActiveNav('#path')}>
+                      <i className="uil uil-briefcase-alt nav__icon"></i>Path
                     </a>
                   </li>
-
                   <li className='nav__item'>
                     <a href="#skills" className='nav__link' onClick={() => setActiveNav('#skills')}>
                       <i className="uil uil-file-alt nav__icon"></i>Skills
@@ -73,7 +80,7 @@ const App = () => {
 
 
                   <li className='nav__item'>
-                    <a href="/post" className='nav__link' onClick={() => setActiveNav('#post')}>
+                    <a href="#post" className='nav__link' onClick={() => setActiveNav('#post')}>
                       <i className="uil uil-scenery nav__icon"></i>Post
                     </a>
                   </li>
@@ -104,7 +111,10 @@ const App = () => {
         <main className='main'>
           <Home />
           <About />
-          <Journey />
+          {/* <Path /> */}
+          {/* <Journey /> */}
+          <Journeys />
+          {/* <Career/> */}
           <Skills />
           <Contact />
           <Footer />
