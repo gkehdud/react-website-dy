@@ -1,9 +1,9 @@
-import React, { useRef, useState, useMemo, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import "./home.css";
 import Social from './Social';
 import Data from './Data';
 import ScrollDown from './ScrollDown';
-import SoccerPlayer from './soccerplayer1.json';
+// import SoccerPlayer from './soccerplayer1.json';
 import programmer from './programmer.json';
 import lottie from 'lottie-web';
 

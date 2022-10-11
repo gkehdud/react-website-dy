@@ -1,0 +1,10 @@
+
+.post__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post__image{
+    width: 450px;
+    height: 450px;
+}

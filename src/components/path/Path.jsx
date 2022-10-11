@@ -1,7 +1,4 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
-// import { Box, Tab, Tabs, Typography } from '@mui/material';
-
 import React, { useState } from 'react'
 import './path.css'
 import military from "./military.jpg"
@@ -151,60 +148,7 @@ const Path = () => {
                 </Tabs>
 
 
-                {/* 
-
-                <Box>
-                    <Box sx={{ display: 'flex' }}>
-                        <Tabs 
-                            value={tabIndex}
-                            onChange={handleTabChange}
-                            orientation="vertical"
-                            textColor='inherit'
-                        >
-                            <Tab label="ERP Developer" />
-                            <Tab label="Qualcomm Campus Program" />
-                            <Tab label="Military" />
-                            <Tab label="Computer Science Engineer" />
-                        </Tabs>
-                        <Box sx={{ margin: 2 }}>
-                            {tabIndex === 0 && (
-                                <Box>
-                                    <Typography>
-                                    <h3>
-                                <span className="path__title">Computer Science Engineer</span>
-                                <span className="path__subtitle">@ Keimyung University (Korea)</span>
-                            </h3>
-                            <div className="path__calender">
-                                <i className="uil uil-calendar-alt"></i> 2013 - 2018
-                            </div>
-                            <div className='path__description'>
-                                <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>Shopping website project</span>
-                                <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>Library management project</span>
-                                <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>Clock alarm project</span>
-                                <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>Unity game project</span>
-                                <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>Package management system</span>
-                            </div>
-                                    </Typography>
-                                </Box>
-                            )}
-                            {tabIndex === 1 && (
-                                <Box>
-                                    <Typography>The second tab</Typography>
-                                </Box>
-                            )}
-                            {tabIndex === 2 && (
-                                <Box>
-                                    <Typography>The third tab</Typography>
-                                </Box>
-                            )}
-                            {tabIndex === 3 && (
-                                <Box>
-                                    <Typography>The third tab</Typography>
-                                </Box>
-                            )}
-                        </Box>
-                    </Box>
-                </Box> */}
+                
 
             </div>
         </div>

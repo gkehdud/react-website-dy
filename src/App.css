@@ -4,12 +4,12 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
-  --huelight: 0;
-  --satlight: 0%;
-  --huedark: 215;
+  --huelight: 200;
+  --satlight: 50%;
+  --huedark: 210;
   --satdark: 75%;
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Josefin Sans", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3.5rem;
@@ -17,11 +17,11 @@
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
-  --tiny-font-size: 0.625rem;
-  --tinier-font-size: 0.425rem;
+  --normal-font-size: 1.1rem;
+  --small-font-size: 0.975rem;
+  --smaller-font-size: 0.913rem;
+  --tiny-font-size: 0.725rem;
+  --tinier-font-size: 0.525rem;
 
   /*========== Font weight ==========*/
   --font-normal: 400;
@@ -59,6 +59,7 @@
 }
 
 /*=============== BASE ===============*/
+
 * {
   margin: 0;
   padding: 0;
@@ -113,23 +114,22 @@ img {
   height: auto;
 }
 
-
 /*=============== Variables Dark theme ===============*/
 #light{
   --hue: var(--huelight);
   --sat: var(--satlight);
-  --title-color: hsl(var(--hue), var(--sat), 25%);
+  --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color-mild: hsl(var(--hue), var(--sat), 65%);
-  --text-color: hsl(var(--hue), var(--sat), 25%);
+  --text-color: hsl(var(--hue), var(--sat), 20%);
   --text-color-dark: hsl(var(--hue), var(--sat), 15%);
   --container-color: hsl(var(--hue), var(--sat), 96%);
   --body-color: hsl(var(--hue), var(--sat), 96%);
   --swal-color : hsl(var(--hue), var(--sat), 91%);
   --section-color : hsl(var(--hue), var(--sat), 96%);
   --section-color-accentuate : hsl(var(--hue), var(--sat), 90%);
-  --section-color-point : hsl(var(--hue), var(--sat), 15%);
-  --button-color: hsl(var(--hue), var(--sat), 25%);
+  --section-color-point : hsl(var(--hue), var(--sat), 35%);
+  --button-color: hsl(var(--hue), var(--sat), 20%);
   --button-text-color: hsl(var(--hue), var(--sat), 96%);
   --button-color-hover: hsl(var(--hue), var(--sat), 10%);
   --button-text-color-hover: hsl(var(--hue), var(--sat), 96%);
@@ -159,7 +159,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 6rem;
+  padding: 9rem 0 9rem;
   background-color: var(--section-color);
 }
 
@@ -170,7 +170,7 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   margin-bottom: 4rem;
   color: var(--text-color);
 }
@@ -214,6 +214,16 @@ img {
 
 .button--flex {
   display: inline-flex;
+  align-items: center;
+}
+
+/* .App{
+  background-color: var(--container-color);
+  align-items: center;
+} */
+.loading{
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 

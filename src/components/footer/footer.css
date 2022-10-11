@@ -1,8 +1,9 @@
 .footer{
     background-color: var(--section-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 1px var(--section-color-point);
 }
 .footer__container{
+    padding-top: 1rem;
     pad: 2rem 0 6rem;
 }
 .footer__title,
@@ -12,7 +13,6 @@
 .footer__title{
     text-align: center;
     margin-bottom: var(--mb-1);
-    margin-top: var(--mb-1);
 }
 .footer__link:hover{
     color : var(--section-color-point);

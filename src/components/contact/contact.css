@@ -134,6 +134,9 @@
     .contact__info{
         grid-template-columns: 1fr;
     }
+    .contact__card{
+        width: 100%;
+    }
     .contact__form{
         width: 100%;
     }

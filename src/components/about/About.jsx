@@ -1,21 +1,23 @@
-import React, { useRef, useState } from 'react'
+import React  from 'react'
 import './about.css';
-import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/RESUME_DOYOUNGHA(EN).pdf";
-import Info from './Info';
-import { useInView } from 'react-intersection-observer';
-import { Color } from 'three';
+
+// import { useInView } from 'react-intersection-observer';
+// import { Color } from 'three';
+// import { useRef, useState } from 'react'
+// import AboutImg from "../../assets/about.jpg";
+// import Info from './Info';
 
 const About = () => {
-    const { ref: myRef, inView: myElementIsVisible } = useInView();
-    const { ref: soccerRef, inView: SoccerIsVisible } = useInView();
+    // const { ref: myRef, inView: myElementIsVisible } = useInView();
+    // const { ref: soccerRef, inView: SoccerIsVisible } = useInView();
 
 
     return (
         <section className="about section" id="about">
             <div data-aos="fade-down">
                 <h2 className="section__title">About Me</h2>
-                <span className="section__subtitle">My introduction</span>
+                <span className="section__subtitle"></span>
 
                 {/* <p ref={soccerRef}>
                     <span className={SoccerIsVisible ? 'soccer animateSoccer' : ''}>

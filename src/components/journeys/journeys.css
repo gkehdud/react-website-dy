@@ -5,128 +5,211 @@
 /* https://www.hostinger.com/tutorials/web-developer-portfolio#1_Charles_Bruyerre */
 /* https://stackoverflow.com/questions/72631164/overriding-peer-dependency-error-on-npm-install */
 
-.journeys__container{
+.journeys__container {
   padding-bottom: 3rem;
   align-items: center;
   justify-self: center;
 }
-.journeys__list{
+
+.journeys__list {
   font-size: var(--small-font-size);
   text-align: left;
   color: var(--text-color-dark);
   width: 220px;
-  
-}
-.journeys__title{
-font-size: var(--normal-font-size);
-color: var(--text-color);
-text-align: left;
-/* text-decoration: overline; */
 
 }
-.journeys__subtitle{
-font-size: var(--h3-font-size);
-font-weight: var(--font-medium);
-color: var(--section-color-point);
-padding-left: 15px;
-text-shadow: 
-0 0 0.055rem white,
-0 0 0.125rem currentColor;
-}
-.journeys__calender{
-font-size: var(--normal-font-size);
-color: var(--text-color-dark);
-text-align: left;
-padding-top: .5rem;
-}
-.journeys__description{
-justify-self: left;
-padding-top: 1rem;
+
+.journeys__title {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  text-align: left;
+  /* text-decoration: overline; */
+
 }
 
-.journeys__datatext{
-display: flex;
-font-size: var(--normal-font-size);
-margin-bottom: var(--mb-1);
-color: var(--text-color);
-text-align: left;
-cursor: pointer;
+.journeys__subtitle {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--section-color-point);
+  padding-left: 15px;
+  text-shadow:
+    0 0 0.055rem white,
+    0 0 0.125rem currentColor;
 }
-.journeys__datatext-underline{
-display: flex;
-font-size: var(--normal-font-size);
-margin-bottom: var(--mb-1);
-color: var(--text-color);
-text-align: left;
-text-decoration: underline;
-cursor: pointer;
+
+.journeys__calender {
+  font-size: var(--normal-font-size);
+  color: var(--text-color-dark);
+  text-align: left;
+  padding-top: .5rem;
 }
-.swal{
-  /* background-color: rgb(10, 26, 53) !important; */
+
+.journeys__description {
+  justify-self: left;
+  padding-top: 1rem;
+}
+
+.journeys__datatext {
+  display: flex;
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+  color: var(--text-color);
+  text-align: left;
+  cursor: pointer;
+}
+
+.journeys__datatext-underline {
+  display: flex;
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+  color: var(--text-color);
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.swal {
   border-radius: 2rem;
   width: 350px;
   height: 400px;
 }
 
 .react-tabs {
-    display: flex;
-    margin-left: 0px;
-    width: auto;
-    height: auto;
-    /* border: 2px solid var(--text-color); */
-    color: var(--text-color);
-    background: var(--section-color);
-    /* justify-content: center; */
-  }
-  .react-tabs__tab-list {
-    display: flex;
-    flex-direction: column;
-    
-    width: max-content;
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    background: var(--section-color);
-    /* border-right: 2px solid var(--text-color); */
-    
+  display: flex;
+  margin-left: 1rem;
+  width: auto;
+  height: auto;
+  color: var(--text-color);
+  background: var(--section-color);
 }
-  
-  .react-tabs__tab {
-    height: auto;
-    list-style: none;
-    padding: 20px 6px;
-    cursor: pointer;
-    border-left: 2px solid var(--text-color-mild);
-  }
-  
-  .react-tabs__tab--selected {
-    border-left: 2px solid var(--section-color-point);
-    /* background: var(--section-color-accentuate); */
-        
-  }
-  
-  .react-tabs__tab-panel {
-    display: flex;
-    
-  }
-  
-  .react-tabs__tab-panel--selected {
-    display: block;
-  }
-  
-  .react-tabs__tab {
-    padding-left: 24px;
-  }
-  
-  .react-tabs__tab--selected {
-    padding-left: 21px;
-  }
-  
-  .panel-content {
-    text-align: left;
-    padding-left: 3rem;
+
+.react-tabs-horizonal {
+  display: contents;
+  width: auto;
+  height: auto;
+  color: var(--text-color);
+  background: var(--section-color);
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 0;
+  padding-right: 1rem;
+  color: var(--text-color);
+  background: var(--section-color);
+}
+
+.react-tabs__tab-list-horizonal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: .5rem;
+  padding-bottom: 3rem;
+  width: 90%;
+  color: var(--text-color);
+  background: var(--section-color);
+}
+
+.react-tabs__tab {
+  height: auto;
+  list-style: none;
+  padding: 20px 6px;
+  cursor: pointer;
+  border-left: 2px solid var(--text-color-mild);
+}
+
+.react-tabs__tab--selected {
+  border-left: 2px solid var(--section-color-point);
+  background: var(--section-color-accentuate);
+
+}
+
+.react-tabs__tab-panel {
+  display: flex;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 1rem;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 1rem;
+}
+
+.panel-content {
+  text-align: left;
+  padding-left: .5rem;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+  .journeys__datatext {
+    font-size: var(--small-font-size);
   }
 
-.MuiTabs {
-  color: yellow;
+  .journeys__datatext-underline {
+    font-size: var(--small-font-size);
+  }
+  .journeys__list{
+    text-align: center;
+    width: auto;
+    font-size: var(--normal-font-size);
+  }
+  .react-tabs__tab {
+    padding-left: 1rem;
+  }
+
+  .react-tabs__tab--selected {
+    padding-left: 1rem;
+  }
 }
+
+@media screen and (max-width: 576px) {
+  .journeys__list{
+    font-size: var(--small-font-size);
+  }
+  .journeys__calender {
+    font-size: var(--small-font-size);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .journeys__list{
+    font-size: var(--smaller-font-size);
+  }
+  .journeys__title {
+    font-size: var(--smaller-font-size);
+  }
+
+  .journeys__subtitle {
+    font-size: var(--small-font-size);
+  }
+
+  .journeys__calender {
+    font-size: var(--smaller-font-size);
+  }
+
+  .journeys__datatext {
+    font-size: var(--smaller-font-size);
+  }
+
+  .journeys__datatext-underline {
+    font-size: var(--smaller-font-size);
+  }
+}
+
+/* For tiny devices */
+@media screen and (max-width: 280px) {}
