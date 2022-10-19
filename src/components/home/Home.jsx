@@ -10,22 +10,7 @@ import lottie from 'lottie-web';
 const Home = () => {
 
 
-  
 
-  // useEffect(() => {
-  //   const instance = lottie.loadAnimation({
-  //     container: document.querySelector("#soccerplayer"),
-  //     animationData: SoccerPlayer,
-  //     renderer: "svg", // "canvas", "html"
-  //     loop: true, // boolean
-  //     autoplay: true, // boolean
-  //     rendererSettings: {
-  //       preserveAspectRatio: "xMidYMid slice",
-  //       className: ".home__soccer"
-  //     }
-  //   });
-  //   return () => instance.destroy();
-  // }, []);
   useEffect(() => {
     const instance = lottie.loadAnimation({
       container: document.querySelector("#animation"),
@@ -43,6 +28,7 @@ const Home = () => {
 
   return (
     <section className='home section' id='home'>
+      
       <div className='home__container container grid'>
         <div className='home__content grid'>
 
@@ -54,8 +40,8 @@ const Home = () => {
             <Cloud count={8} radius={20} />
             <TrackballControls />
           </Canvas> */}
-            <div className='home__image'>
-              <div data-aos = "zoom-in-up" id='animation'></div>
+          <div className='home__image'>
+            <div data-aos="zoom-in-up" id='animation'></div>
           </div>
           <div></div>
           <Data />

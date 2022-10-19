@@ -99,7 +99,7 @@
 }
 
 .contact__form-area{
-    height: 13.5rem;
+    height: 11.7rem;
 }
 .contact__form-area textarea{
     resize: none;
@@ -110,9 +110,6 @@
 @media screen and (max-width: 992px) {
     .contact__container{
         column-gap: 3rem;
-    }
-    .contact__form-area{
-        height: 13rem;
     }
   }
   

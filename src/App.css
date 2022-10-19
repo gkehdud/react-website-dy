@@ -9,8 +9,10 @@
   --huedark: 210;
   --satdark: 75%;
   /*========== Font and typography ==========*/
-  --body-font: "Josefin Sans", sans-serif;
-
+  /* --body-font: "Josefin Sans", sans-serif; */
+  /* font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif; */
+  font-family: 'Nanum Gothic', sans-serif;
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3.5rem;
   --medium-font-size: 1.75rem;
@@ -180,6 +182,28 @@ img {
   text-align: center;
 }
 
+.modal__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.modal__subtitle {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.modal__title,
+.modal__subtitle {
+  text-align: center;
+}
+.modal__description {
+  font-size: var(--smaller-font-size);
+  /* font-weight: var(--font-semi-bold); */
+  color: var(--title-color);
+}
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
@@ -191,7 +215,6 @@ img {
   display: grid;
   gap: 1.5rem;
 }
-
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -223,10 +246,31 @@ img {
 } */
 .loading{
   display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: var(--container-color);
+  border-width: 1;
+  flex-direction: column;
+}
+.loading__img{
+  background: url(./assets/public.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  justify-self: center;
+  width: 350px;
+  height: 350px;
 }
 
+.loading__image{
+
+  width: 100px;
+  height: 100px;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -257,7 +301,10 @@ img {
   body {
     margin: 0 0 var(--header-height) 0;
   }
-
+  .container {
+    margin-left: var(--mb-0-5);
+    margin-right: var(--mb-0-5);
+  }
   .section {
     padding: 5rem 1rem 4rem;
   }

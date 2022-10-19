@@ -77,6 +77,11 @@
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    border: 1px solid var(--section-color-point);
+    border-radius: 50%; */
 }
 
 .devicon-devicon-plain {
@@ -87,10 +92,10 @@
     fill: var(--section-color-point);
     stroke: var(--section-color);
 }
-.devicon-devicon-plain :hover {
-    /* fill: var(--section-color-point);
-    stroke: var(--section-color-point); */
-}
+/* .devicon-devicon-plain :hover {
+    fill: var(--section-color-point);
+    stroke: var(--section-color-point);
+} */
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
@@ -110,7 +115,7 @@
     .skills__description {
         padding: 0.4rem 0 0;
         margin-bottom: var(--mb-2-5);
-        grid-template-columns: 0.8fr;
+        grid-template-columns: 1fr;
         font-size: var(--small-font-size);
     }
 }

@@ -1,4 +1,4 @@
-
+/* 
 .post__content{
     display: flex;
     justify-content: center;
@@ -7,4 +7,215 @@
 .post__image{
     width: 450px;
     height: 450px;
+} */
+.post__content {
+    padding: 3rem 3rem 1.5rem 1.5rem;
 }
+
+.post__data {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    /* border: 1px solid var(--text-color-mild); */
+}
+
+.post__title {
+    padding-bottom: 1rem;
+    cursor: pointer;
+    display: flex;
+}
+.post__title:hover{
+    transform: translate(0.25rem);
+}
+
+.post__content {
+    row-gap: 3rem;
+}
+
+.post__image {
+    width: 100%;
+    height: 100%;
+    height: 220px;
+    border-radius: 12px;
+    border: 2px solid var(--section-color-point);
+    /* justify-self: center;
+    align-self: center; */
+    object-fit: fill;
+}
+
+.post__image:hover{
+    background-color: var(--section-color-point);
+    transform: scale(1.05);
+}
+.post__stack {
+    text-align: justify;
+}
+
+.post__stack {
+    margin-bottom: 1rem;
+}
+
+.tags li {
+    display: inline-block;
+    margin-right: 0.3rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    box-shadow: 0 1px 4px var(--container-color-point);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--container-color);
+    background-color: var(--text-color);
+}
+
+.modal-section {
+
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-container {
+    width: 80%;
+    height: 90%;
+    border-radius: 12px;
+    background-color: var(--section-color);
+    box-shadow: var(--section-color-point) 0px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modal__header {
+    display: grid;
+    justify-items: center;
+}
+
+.modal-container .modal-title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-close-btn-container button {
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-container .modal-body {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: var(--small-font-size);
+    text-align: justify;
+}
+
+.modal-container .modal-body .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.links .a {
+    color: white;
+}
+
+.modal-container .modal-footer {
+    flex: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: var(--small-font-size);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    justify-content: center;
+    align-items: center;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center; 
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center; */
+}
+
+.swiper-slide img {
+    margin: .8rem;
+    border-radius: 12px;
+    width: 50%;
+    height: 75%;
+    justify-self: center;
+    object-fit: fill;
+}
+.modal-body .modal__image {
+    margin: .8rem;
+    border-radius: 12px;
+    width: 50%;
+    height: 55%;
+    justify-self: center;
+    align-self: center;
+    object-fit: fill;
+}
+.video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+
+    .post__content {
+        row-gap: 1rem;
+        width: 100%;
+        padding: 0.4rem 0 0;
+    }
+
+    .post__data {
+        grid-template-columns: 1fr;
+        margin-bottom: var(--mb-2-5);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {}
+
+/* For tiny devices */
+@media screen and (max-width: 280px) {}

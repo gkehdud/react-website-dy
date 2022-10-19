@@ -6,6 +6,7 @@ import React, { useEffect,useState } from 'react'
 import './journeys.css'
 import military from "./military.jpg"
 import sorry from "./sorry.png"
+import Post from '../post/Post';
 
 
 
@@ -34,11 +35,12 @@ const Journeys = () => {
     const IwasCute = () => {
         Swal.fire({
             position: 'center',
-            text: 'Pretty cute huh?',
+            text: 'Pretty cute huh',
             // icon: 'error',
             // text: 'Please input your valid name, email, story.',
             imageUrl: military,
-            imageWidth: 300,
+            width : 250,
+            imageWidth: 200,
             imageHeight: 250,
             imageAlt: 'Custom Image',
             showConfirmButton: false,
@@ -55,17 +57,15 @@ const Journeys = () => {
         Swal.fire({
             position: 'center',
             title: "Sorry",
-            text: 'Post section is under construction. Coming soon. I promise you.',
+            text: 'I am collecting and organizing projects. Coming soon.',
             // icon: 'error',
             imageUrl: sorry,
-            width : 400,
+            width : 300,
             imageWidth: 200,
-            imageHeight: 150,
+            imageHeight: 120,
             imageAlt: 'Custom Image',
-            showConfirmButton: false,
             timerProgressBar: true,
             timer: 3500,
-            confirmButtonText: 'I agree',
             customClass: {
                 popup: 'swal'
             },
@@ -81,9 +81,9 @@ const Journeys = () => {
                         <h2 className="section__title">Path</h2>
                         <span className="section__subtitle"></span>
                     </div>
-                    <Tabs className={windowSize.innerWidth <= 768 ? "react-tabs-horizonal" : "react-tabs"} >
+                    <Tabs className="react-tabs" >
                     
-                        <TabList className={windowSize.innerWidth <= 768 ? "react-tabs__tab-list-horizonal" : "react-tabs__tab-list"}>
+                        <TabList className="react-tabs__tab-list">
                             <Tab>
                                 <p className="journeys__list">ERP Developer</p>
                             </Tab>
@@ -153,7 +153,7 @@ const Journeys = () => {
                                 </div>
                                 <div className='journeys__description'>
                                     <span onClick={IwasCute} className="journeys__datatext-underline">
-                                        It was fun though 🇰🇷</span>
+                                        Never wanna go back but it was fun though 🇰🇷</span>
                                 </div>
                             </div>
                         </TabPanel>

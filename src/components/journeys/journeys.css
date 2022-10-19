@@ -83,13 +83,6 @@
   background: var(--section-color);
 }
 
-.react-tabs-horizonal {
-  display: contents;
-  width: auto;
-  height: auto;
-  color: var(--text-color);
-  background: var(--section-color);
-}
 
 .react-tabs__tab-list {
   display: flex;
@@ -97,17 +90,6 @@
   width: max-content;
   margin: 0;
   padding-right: 1rem;
-  color: var(--text-color);
-  background: var(--section-color);
-}
-
-.react-tabs__tab-list-horizonal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: .5rem;
-  padding-bottom: 3rem;
-  width: 90%;
   color: var(--text-color);
   background: var(--section-color);
 }
@@ -154,7 +136,23 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-
+  .react-tabs {
+    display: contents;
+  width: auto;
+  height: auto;
+  color: var(--text-color);
+  background: var(--section-color);
+  }
+  .react-tabs__tab-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: .5rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    color: var(--text-color);
+    background: var(--section-color);
+  }
   .journeys__datatext {
     font-size: var(--small-font-size);
   }
@@ -162,11 +160,13 @@
   .journeys__datatext-underline {
     font-size: var(--small-font-size);
   }
-  .journeys__list{
+
+  .journeys__list {
     text-align: center;
     width: auto;
     font-size: var(--normal-font-size);
   }
+
   .react-tabs__tab {
     padding-left: 1rem;
   }
@@ -177,9 +177,10 @@
 }
 
 @media screen and (max-width: 576px) {
-  .journeys__list{
+  .journeys__list {
     font-size: var(--small-font-size);
   }
+
   .journeys__calender {
     font-size: var(--small-font-size);
   }
@@ -187,9 +188,10 @@
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-  .journeys__list{
+  .journeys__list {
     font-size: var(--smaller-font-size);
   }
+
   .journeys__title {
     font-size: var(--smaller-font-size);
   }
