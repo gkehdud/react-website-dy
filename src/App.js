@@ -69,7 +69,7 @@ const App = () => {
   /*=========================Toggle Menu========================*/
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   }
