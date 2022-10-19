@@ -10,7 +10,6 @@ import image1 from '../../assets/Package.jpeg'
 import image2 from '../../assets/Package1.png'
 import image3 from '../../assets/PackageSystem.png'
 import image4 from '../../assets/PackageSystem2.png'
-// import video1 from '../../assets/PackageVideo.mp4'
 import QI_Final from '../../assets/QI_Final.pptx'
 import QI_Documentaion from '../../assets/QI_Documentation.docx'
 import CV from "../../assets/RESUME_DOYOUNGHA(EN).pdf";
