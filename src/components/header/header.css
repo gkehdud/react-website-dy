@@ -77,7 +77,7 @@
 
 /*==================Change background header=================*/
 .scroll-header {
-    box-shadow: 0 -1px 3px var(--section-color-point);
+    box-shadow: 0 0px 1px var(--section-color-point);
 }
 
 
