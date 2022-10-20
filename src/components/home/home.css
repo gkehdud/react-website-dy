@@ -170,6 +170,7 @@
 
     .home__subtitle {
         padding-left: 3.75rem;
+        padding-top: .3rem;
         margin-bottom: var(--mb-1);
     }
 
@@ -237,15 +238,23 @@
     .home__subtitle{
         font-size: var(--small-font-size);
         height: 20px;
+        padding-top: 0.5rem;
     }
     .home__subtitle:before{
-        top: .8rem;
+        top: 1.1rem;
     }
 
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
+    .home__subtitle{
+        padding-left: 2.4rem;
+    }
+    .home__subtitle:before{
+        width: 25px;
+    }
+    
     .home__img {
         width: 180px;
         height: 180px;
