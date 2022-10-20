@@ -137,7 +137,7 @@ const Journeys = () => {
                                     <i className="uil uil-calendar-alt"></i> Jul 2017 - Oct 2017 (UCSD, US)
                                 </div>
                                 <div className='journeys__description'>
-                                    <span onClick={UnderConstruction} className="journeys__datatext-underline">
+                                    <span className="journeys__datatext">
                                         Android app project(Building escape app using fire alarm sensor)</span>
                                 </div>
                             </div>
@@ -168,11 +168,11 @@ const Journeys = () => {
                                     <i className="uil uil-calendar-alt"></i> 2013 - 2018 (Korea)
                                 </div>
                                 <div className='journeys__description'>
-                                    <span onClick={UnderConstruction} className="journeys__datatext-underline"><i class="uil uil-angle-right-b"></i>Shopping website project</span>
-                                    <span onClick={UnderConstruction} className="journeys__datatext-underline"><i class="uil uil-angle-right-b"></i>Library management project</span>
-                                    <span onClick={UnderConstruction} className="journeys__datatext-underline"><i class="uil uil-angle-right-b"></i>Clock alarm project</span>
-                                    <span onClick={UnderConstruction} className="journeys__datatext-underline"><i class="uil uil-angle-right-b"></i>Unity game project</span>
-                                    <span onClick={UnderConstruction} className="journeys__datatext-underline"><i class="uil uil-angle-right-b"></i>Package management system</span>
+                                    <span className="journeys__datatext"><i class="uil uil-angle-right-b"></i>Shopping website project</span>
+                                    <span className="journeys__datatext"><i class="uil uil-angle-right-b"></i>Library management project</span>
+                                    <span className="journeys__datatext"><i class="uil uil-angle-right-b"></i>Clock alarm project</span>
+                                    <span className="journeys__datatext"><i class="uil uil-angle-right-b"></i>Unity game project</span>
+                                    <span className="journeys__datatext"><i class="uil uil-angle-right-b"></i>Package management project</span>
                                 </div>
                             </div>
                         </TabPanel>
