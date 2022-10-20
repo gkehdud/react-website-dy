@@ -6,8 +6,11 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import Package from '../../assets/Package1.png'
 import BuildingRun from '../../assets/QI_Logo.png'
+import Magician from '../../assets/Magician.png'
 import Project1 from './Project1';
 import Project2 from './Project2';
+import Project3 from './Project3';
+import sorry from "../journeys/sorry.png"
 
 const Post = () => {
 
@@ -63,7 +66,26 @@ const Post = () => {
     else  showSidebar();
     setShowProject4Modal((show) => !show)
   };
+  const Swal = require('sweetalert2')
+  const UnderConstruction = () => {
+    Swal.fire({
+        position: 'center',
+        title: "Sorry",
+        text: 'I am collecting and organizing the detail. Coming soon.',
+        // icon: 'error',
+        imageUrl: sorry,
+        width : 300,
+        imageWidth: 200,
+        imageHeight: 120,
+        imageAlt: 'Custom Image',
+        timerProgressBar: true,
+        timer: 3500,
+        customClass: {
+            popup: 'swal'
+        },
+    })
 
+};
   // useEffect(() => {
   //   const isClickedOutside = e =>{
   //     // console.log("isModal : "+isModal);
@@ -104,28 +126,25 @@ const Post = () => {
             <h2 className="section__title">Projects</h2>
             <span className="section__subtitle"></span>
           </div>
-          <div data-aos="zoom-in-up" id='animation2'></div>
-              <span className="section__subtitle">Under construction, Coming soon</span>
+          {/* <div data-aos="zoom-in-up" id='animation2'></div>
+              <span className="section__subtitle">Under construction, Coming soon</span> */}
 
 
-          {/* <div ref={ref}>
+          <div ref={ref}>
             {showProject1Modal && (<Project1 id='Modal1' closeModal={showProject1} />)}
           </div>
           <div ref={ref}>
             {showProject2Modal && (<Project2 id='Modal2' closeModal={showProject2} />)}
           </div>
+          <div ref={ref}>
+            {showProject3Modal && (<Project3 id='Modal3' closeModal={showProject3} />)}
+          </div>
           <div className='post__content grid'>
-            <div className='post__image'>
-              <div data-aos="zoom-in-up" id='animation2'></div>
-              <span className="section__subtitle">Under construction, Coming soon</span>
-            </div>
             <div className="post__data grid">
-              <img className='post__image' src={Package} />
+              <img className='post__image' onClick={UnderConstruction} src={Package} />
               <div className="post__description">
-                <h3 className="post__title" onClick={showProject1}>Package management system</h3>
-                <p className="post__story">This was my graduation project. Not that unique idea but I could learn how to connect with devices and platform. 
-                Sometimes we lost our package it could be thief or some other reason. So we tried to make some safe devices in our mailbox.
-                We used raspberry pi, arduino java mysql. that was fun</p>
+                <h3 className="post__title" onClick={UnderConstruction}>Package management</h3>
+                <p className="post__story">Make your package safer. Locking & management system in your mailbox.</p>
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>java</li>
@@ -138,10 +157,10 @@ const Post = () => {
 
 
             <div data-aos="fade-down" className="post__data grid">
-              <img className='post__image' src={BuildingRun} />
+              <img className='post__image' onClick={UnderConstruction} src={BuildingRun} />
               <div className="post__description">
-                <h3 className="post__title" onClick={showProject2}>Building Run</h3>
-                <p className="post__story">Qualcomm institute, Using sensor and set alarm and giving users the route to get out of the building</p>
+                <h3 className="post__title" onClick={UnderConstruction}>Building Run</h3>
+                <p className="post__story">Using fire alarm sensor and giving users the route to get out of the building.</p>
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>Android studio</li>
@@ -151,7 +170,22 @@ const Post = () => {
                 </ui>
               </div>
             </div>
-          </div> */}
+
+            <div data-aos="fade-down" className="post__data grid">
+              <img className='post__image' onClick={UnderConstruction} src={Magician} />
+              <div className="post__description">
+                <h3 className="post__title" onClick={UnderConstruction}>Magician</h3>
+                <p className="post__story">Using leap motion, make the magic like ice, fire, wind with different finger motions and kill the monsters.</p>
+                <h4 className="post__stack text-xs"></h4>
+                <ui className="tags text-sm">
+                  <li>Leap motion</li>
+                  <li>Unity</li>
+                  <li>VR</li>
+                  <li>C++</li>
+                </ui>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

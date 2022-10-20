@@ -41,7 +41,7 @@ const App = () => {
       //     setDone(true);
       //   })
       setDone(true);
-    }, 100);
+    }, 2000);
   }, [])
   
   useEffect(() => {

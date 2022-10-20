@@ -51,6 +51,7 @@
     padding-left: 5.4rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
+    height: 25px;
 }
 
 .home__subtitle::before {
@@ -174,7 +175,6 @@
 
     .home__subtitle:before {
         width: 42px;
-        top: 0.8rem;
     }
 
     .home__description {
@@ -235,7 +235,11 @@
 @media screen and (max-width: 576px) {
 
     .home__subtitle{
-        font-size: var(--h3-font-size);
+        font-size: var(--small-font-size);
+        height: 20px;
+    }
+    .home__subtitle:before{
+        top: .8rem;
     }
 
 }
