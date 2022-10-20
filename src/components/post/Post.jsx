@@ -140,7 +140,7 @@ const Post = () => {
             {showProject3Modal && (<Project3 id='Modal3' closeModal={showProject3} />)}
           </div>
           <div className='post__content grid'>
-            <div className="post__data grid">
+            <div data-aos="fade-down" className="post__data grid">
               <img className='post__image' onClick={UnderConstruction} src={Package} />
               <div className="post__description">
                 <h3 className="post__title" onClick={UnderConstruction}>Package management</h3>
