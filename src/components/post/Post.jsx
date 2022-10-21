@@ -139,12 +139,11 @@ const Post = () => {
           <div ref={ref}>
             {showProject3Modal && (<Project3 id='Modal3' closeModal={showProject3} />)}
           </div>
-          <div className='post__content grid'>
-            <div data-aos="fade-down" className="post__data grid">
+          <div data-aos="fade-down" className='post__content grid'>
+            <div className="post__data grid">
               <img className='post__image' onClick={UnderConstruction} src={Package} />
               <div className="post__description">
                 <h3 className="post__title" onClick={UnderConstruction}>Package management</h3>
-                <p className="post__story">Make your package safer. Locking & management system in your mailbox.</p>
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>java</li>
@@ -152,15 +151,15 @@ const Post = () => {
                   <li>raspberry pi</li>
                   <li>MySQL</li>
                 </ui>
+                <p className="post__story">Make your package safer. Locking & management system in your mailbox.</p>
               </div>
             </div>
 
 
-            <div data-aos="fade-down" className="post__data grid">
+            <div className="post__data grid">
               <img className='post__image' onClick={UnderConstruction} src={BuildingRun} />
               <div className="post__description">
                 <h3 className="post__title" onClick={UnderConstruction}>Building Run</h3>
-                <p className="post__story">Using fire alarm sensor and giving users the route to get out of the building.</p>
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>Android studio</li>
@@ -168,14 +167,14 @@ const Post = () => {
                   <li>MySQL</li>
                   <li>Udoo board</li>
                 </ui>
+                <p className="post__story">Using fire alarm sensor and giving users the route to get out of the building.</p>
               </div>
             </div>
 
-            <div data-aos="fade-down" className="post__data grid">
+            <div className="post__data grid">
               <img className='post__image' onClick={UnderConstruction} src={Magician} />
               <div className="post__description">
                 <h3 className="post__title" onClick={UnderConstruction}>Magician</h3>
-                <p className="post__story">Using leap motion, make the magic like ice, fire, wind with different finger motions and kill the monsters.</p>
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>Leap motion</li>
@@ -183,6 +182,7 @@ const Post = () => {
                   <li>VR</li>
                   <li>C++</li>
                 </ui>
+                <p className="post__story">Using leap motion, make the magic like ice, fire, wind with different finger motions and kill the monsters.</p>
               </div>
             </div>
           </div>

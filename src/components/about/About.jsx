@@ -15,8 +15,8 @@ const About = () => {
 
     return (
         <section className="about section" id="about">
-            <div data-aos="fade-down">
-                <h2 className="section__title">About Me</h2>
+            <div>
+                <h2 className="section__title" data-aos="fade-down">About Me</h2>
                 <span className="section__subtitle"></span>
 
                 {/* <p ref={soccerRef}>
@@ -30,8 +30,8 @@ const About = () => {
                 <div className="about__container container grid">
                     {/* <img src={AboutImg} alt="" className="about__img" /> */}
 
-                    <img className="about__img" />
-                    <div className="about__data">
+                    <img className="about__img" data-aos = "fade-right"  data-aos-duration = "1000" />
+                    <div className="about__data" data-aos = "fade-left" data-aos-duration = "1000" >
                         {/* <Info /> */}
 
                         {/* <i class="uil uil-football" className={SoccerIsVisible ? 'soccer animateSoccer' : ''} ref={soccerRef} style={{ fontSize: '150px' }} >

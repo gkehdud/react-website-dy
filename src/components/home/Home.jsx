@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <section className='home section' id='home'>
       
-      <div className='home__container container grid'>
+      <div className='home__container container grid' data-aos="fade-down">
         <div className='home__content grid'>
 
           <Social />
@@ -41,7 +41,7 @@ const Home = () => {
             <TrackballControls />
           </Canvas> */}
           <div className='home__image'>
-            <div data-aos="zoom-in-up" id='animation'></div>
+            <div data-aos="zoom-in-up" data-aos-duration = "2000" id='animation'></div>
           </div>
           <div></div>
           <Data />
