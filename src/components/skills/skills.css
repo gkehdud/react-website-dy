@@ -108,16 +108,17 @@
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+
+    .skills__description {
+        grid-template-columns: 1fr;
+        padding: 0.4rem 0 0;
+        margin-bottom: var(--mb-2-5);
+        font-size: var(--small-font-size);
+    }
 }
 
 @media screen and (max-width: 576px) {
    
-    .skills__description {
-        padding: 0.4rem 0 0;
-        margin-bottom: var(--mb-2-5);
-        grid-template-columns: 1fr;
-        font-size: var(--small-font-size);
-    }
 }
 
 /* For small devices */

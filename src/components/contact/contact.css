@@ -100,7 +100,7 @@
 }
 
 .contact__form-area{
-    height: 11.7rem;
+    height: 12.7rem;
 }
 .contact__form-area textarea{
     resize: none;
@@ -111,6 +111,10 @@
 @media screen and (max-width: 992px) {
     .contact__container{
         column-gap: 3rem;
+    }
+
+    .contact__form-area{
+        height: 10.7rem;
     }
   }
   
@@ -123,6 +127,9 @@
     .contact__info{
         justify-content: center;
     }
+    .contact__card{
+        width: 100%;
+    }
     .contact__form{
         margin: 0 auto;
     }
@@ -131,9 +138,6 @@
   @media screen and (max-width: 576px) {
     .contact__info{
         grid-template-columns: 1fr;
-    }
-    .contact__card{
-        width: 100%;
     }
     .contact__form{
         width: 100%;
