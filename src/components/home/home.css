@@ -15,19 +15,7 @@
 .home__social {
     display: grid;
     grid-template-columns: max-content;
-    row-gap: 0.7rem;
-}
-
-
-.home__scroll {
-    margin-left: 9.25rem;
-    margin-bottom: 5rem;
-}
-
-.lottie-svg-class {
-    width: calc(max(50px, 50px)) !important;
-    margin-left: 10px;
-    margin-bottom: -10px;
+    row-gap: 0.5rem;
 }
 
 .home__social-icon {
@@ -38,6 +26,19 @@
 .home__social-icon:hover {
     color: var(--title-color);
 }
+
+.home__scroll {
+    margin-left: 9.25rem;
+    margin-bottom: 5rem;
+    font-weight: var(--font-medium);
+}
+
+.lottie-svg-class {
+    width: calc(max(50px, 50px)) !important;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
 
 .home__title {
     font-size: var(--big-font-size);

@@ -31,14 +31,15 @@
 .footer__social-link{
     background-color: var(--title-color);
     color: var(--container-color);
-    font-size: 1.2rem;
-    padding: 0.4rem;
+    font-size: 1.3rem;
+    padding: 0.3rem;
     border-radius: 0.5rem;
     display: inline-flex;
 }
 .footer__social-link:hover{
     background-color: var(--section-color-point);
 }
+
 .footer__copy{
     display: block;
     margin-top: 2.0rem;

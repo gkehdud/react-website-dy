@@ -43,6 +43,7 @@
 }
 .contact__card-data{
     display: block;
+    font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
 }
 .contact__button{

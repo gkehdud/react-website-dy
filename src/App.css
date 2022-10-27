@@ -28,7 +28,7 @@
   /*========== Font weight ==========*/
   --font-normal: 400;
   --font-medium: 500;
-  --font-semi-bold: 600;
+  --font-semi-bold: 900;
 
   /*========== Margenes Bottom ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -126,17 +126,17 @@ img {
   --text-color-mild: hsl(var(--hue), var(--sat), 65%);
   --text-color: hsl(var(--hue), var(--sat), 20%);
   --text-color-dark: hsl(var(--hue), var(--sat), 15%);
-  --container-color: hsl(var(--hue), var(--sat), 96%);
-  --body-color: hsl(var(--hue), var(--sat), 96%);
+  --container-color: hsl(var(--hue), var(--sat), 94%);
+  --body-color: hsl(var(--hue), var(--sat), 94%);
   --swal-color : hsl(var(--hue), var(--sat), 91%);
   --section-color-mild : hsl(var(--hue), var(--sat), 88%);
-  --section-color : hsl(var(--hue), var(--sat), 96%);
+  --section-color : hsl(var(--hue), var(--sat), 94%);
   --section-color-accentuate : hsl(var(--hue), var(--sat), 90%);
   --section-color-point : hsl(var(--hue), var(--sat), 35%);
   --button-color: hsl(var(--hue), var(--sat), 20%);
-  --button-text-color: hsl(var(--hue), var(--sat), 96%);
+  --button-text-color: hsl(var(--hue), var(--sat), 94%);
   --button-color-hover: hsl(var(--hue), var(--sat), 10%);
-  --button-text-color-hover: hsl(var(--hue), var(--sat), 96%);
+  --button-text-color-hover: hsl(var(--hue), var(--sat), 94%);
 }
 #dark {
   /*Dark Color mode HSL(hue, saturation, lightness)*/
@@ -147,17 +147,17 @@ img {
   --text-color: hsl(var(--hue), 8%, 85%);
   --text-color-dark: hsl(var(--hue), 8%, 70%);
   --text-color-mild: hsl(var(--hue), 8%, 95%);
-  --body-color: hsl(var(--hue), var(--sat), 10%);
-  --container-color: hsl(var(--hue), var(--sat), 10%);
+  --body-color: hsl(var(--hue), var(--sat), 13%);
+  --container-color: hsl(var(--hue), var(--sat), 13%);
   --swal-color : hsl(var(--hue), var(--sat), 85%);
   --section-color-mild : hsl(var(--hue), var(--sat), 20%);
-  --section-color : hsl(var(--hue), var(--sat), 10%);
-  --section-color-accentuate : hsl(var(--hue), var(--sat), 15%);
+  --section-color : hsl(var(--hue), var(--sat), 13%);
+  --section-color-accentuate : hsl(var(--hue), var(--sat), 18%);
   --section-color-point : rgb(64, 249, 194);
   --button-color: hsl(var(--hue), 8%, 85%);
-  --button-text-color: hsl(var(--hue), var(--sat), 10%);
+  --button-text-color: hsl(var(--hue), var(--sat), 13%);
   --button-color-hover: hsl(var(--hue), 8%, 100%);
-  --button-text-color-hover: hsl(var(--hue), var(--sat), 10%);
+  --button-text-color-hover: hsl(var(--hue), var(--sat), 13%);
   
 }
 

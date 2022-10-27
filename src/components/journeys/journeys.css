@@ -40,6 +40,7 @@
 .journeys__calender {
   font-size: var(--normal-font-size);
   color: var(--text-color-dark);
+  font-weight: var(--font-medium);
   text-align: left;
   padding-top: .5rem;
 }
@@ -52,16 +53,20 @@
 .journeys__datatext {
   display: flex;
   font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
   color: var(--text-color);
   text-align: left;
   cursor: pointer;
 }
-
+/* .journeys__datatext::before{
+  content: "✔︎";
+} */
 .journeys__datatext-underline {
   display: flex;
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
   color: var(--text-color);
   text-align: left;
   text-decoration: underline;
