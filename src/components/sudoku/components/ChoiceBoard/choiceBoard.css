@@ -2,17 +2,21 @@
     display: flex;
     justify-content: space-around;
     flex: 1;
+    width: 100%;
   }
   
   .choice {
-    width: 55px;
-    height: 30px;
-    padding-top: 5px;
-    margin : 5px;
+    width: 100%;
+    min-width: 50px;
+    height: 40px;
+    padding-top: 8px;
+    margin : 8px;
     text-align: center;
     box-shadow: 0 1px 5px var(--section-color-point);
     border-radius: 12px;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: var(--font-semi-bold);
     background-color: var(--text-color-mild);
     color: var(--section-color);
   }
@@ -24,7 +28,7 @@
     background-color: var(--section-color-point);
   }
   .selected-eraser {
-    background: var(--text-color);
+    background-color: var(--section-color-point);
   }
   
   .selected p {

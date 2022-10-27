@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 330px;
+    min-width: 330px;
     width: 100%;
     height: 100vh;
     background: var(--section-color);
@@ -15,7 +15,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    max-width: 450px;
+    width: 100%;
     gap: 10px;
   }
   
@@ -45,7 +46,9 @@
   
   .counter-container{
     display: grid;
-    width: 320px;
+    max-width: 370px;
+    justify-items: center;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1fr;
     color: var(--section-color-point);

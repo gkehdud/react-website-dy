@@ -21,16 +21,18 @@
 
 .post__title {
     cursor: pointer;
-    display: flex;
     color: var(--text-color);
     font-weight: var(--font-semi-bold);
-    font-size: 18px;
+    font-size: 20px;
 }
 .post__title:hover{
     transform: translate(0.25rem);
 }
 .post__story{
     font-size: var(--small-font-size);
+}
+.post__title::before{
+    content: "✔︎  ";
 }
 .post__image {
     width: 85%;
@@ -42,7 +44,6 @@
     object-fit: fill;
     filter: brightness(0.8);
 }
-
 .post__image:hover{
     background-color: var(--section-color-point);
     transform: scale(1.05);

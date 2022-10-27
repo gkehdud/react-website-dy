@@ -26,12 +26,12 @@
 .footer__social{
     display: flex;
     justify-content: center;
-    column-gap: 1.25rem;
+    column-gap: .7rem;
 }
 .footer__social-link{
     background-color: var(--title-color);
     color: var(--container-color);
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
     display: inline-flex;

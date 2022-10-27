@@ -63,6 +63,11 @@
     width: auto;
     height: 30vh;
   }
+
+
+.lottie-Result-class {
+  height: 200px !important;
+}
   .result-body small {
     margin-top: 5px;
     margin-bottom: 20px;

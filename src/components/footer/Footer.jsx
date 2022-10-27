@@ -52,7 +52,7 @@ const Footer = () => {
         <footer className='footer'>
             <div className="footer__container container">
                 <h1 className="footer__title">Doyoung</h1>
-                <ul className="footer__list">
+                {/* <ul className="footer__list">
 
                     <li>
                         <a href="#about" className="footer__link">About</a>
@@ -66,7 +66,7 @@ const Footer = () => {
                         <a href="#post" className="footer__link">Post</a>
                     </li>
 
-                </ul>
+                </ul> */}
 
                 <div className="footer__social">
                     <a href="https://www.instagram.com/doyoun_g" className="footer__social-link" target="_blank">
@@ -77,10 +77,13 @@ const Footer = () => {
                         <i className="bx bxl-facebook"></i>
                     </a>
 
-                    <a href="https://www.twitter.com" className="footer__social-link" target="_blank">
-                        <i className="bx bxl-twitter"></i>
+                    <a href="https://www.linkedin.com/in/doyoung-ha-b64352238/" className="footer__social-link" target="_blank">
+                        <i className="bx bxl-linkedin"></i>
                     </a>
 
+                    <a href="https://www.github.com/gkehdud" className="footer__social-link" target="_blank">
+                        <i className="bx bxl-github"></i>
+                    </a>
                 </div>
                 <div style={{
                     display: "flex",
@@ -93,10 +96,10 @@ const Footer = () => {
                         isOn={value}
                         handleToggle={() => setValue(!value)}
                     /> */}
-                    
+
                     {/* <span className='footer__switch'>Public</span> */}
-                   
-                   {/* <FormControlLabel className='footer__switch' control={<Switch color='default' />} label="Private" /> */}
+
+                    {/* <FormControlLabel className='footer__switch' control={<Switch color='default' />} label="Private" /> */}
                     {/* <FormGroup>
                         
                         <Stack direction="row" spacing={1} alignItems="center">

@@ -42,6 +42,9 @@ const ResultModal = ({
       loop: true,
       autoplay: true,
       animationData: animationData,
+      rendererSettings: {
+        className: "lottie-Result-class"
+      }
     });
 
     return () => lottieAnimation.destroy(); // Clean up function
@@ -70,7 +73,7 @@ const ResultModal = ({
         <div className="result-footer">
           {!pressedSolve && isPlayerWon && <Button
             onClick={handleRanking}
-            text="Ranking"
+            text="Save"
           />}
         </div>
       </div>

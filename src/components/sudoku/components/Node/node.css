@@ -1,25 +1,28 @@
 td {
     border: 2px solid var(--text-color);
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     user-select: none;
-    font-weight : bold;
+    font-weight : var(--font-medium);
     color: var(--text-color);
   
   }
   
   .right-border {
-    border: 2px solid var(--text-color);
+    /* border: 2px solid var(--text-color); */
+    border-right: 4px solid var(--text-color);
   }
   
   .bottom-border {
-    border: 2px solid var(--text-color);
+    border-bottom: 4px solid var(--text-color);
   }
   
   .cell-modifiable{
     cursor: pointer;
     color: #a7a1fffe;
+    font-weight: bolder;
+    background-color: var(--section-color-accentuate);
   }
   
   .cell-invalid {
@@ -28,6 +31,7 @@ td {
   
   .cell-hinted{
     color: red;
+    font-weight: bolder;
     animation-name: hintAnimation;
     animation-duration: 2s;
     animation-timing-function: ease-out;

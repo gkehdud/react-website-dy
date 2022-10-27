@@ -38,7 +38,7 @@ const About = () => {
                     </i> */}
                         {/* <p>{myElementIsVisible ? 'Yes' : 'No'}</p> */}
                         <p className="about__description">I'm a Backend Developer from Korea and currently living in Queens, NY.
-                            <br /><br />Developed ERP system, Apps for WMS, sales. Recently I'm really into developing website and learning Frontend.
+                            <br /><br />Developed ERP system, Apps for wms, sales. Recently I'm really into developing website and learning Frontend.
                             <br /><br />Fan of soccer, TV series and animals. Especially cat.
                             {/* <br /><br />Interested in the entire backend specturm especially database,sql and working on ambitious projects with positive people. */}
                             {/* <br/><br/>Not all those who wander are lost:) */}
