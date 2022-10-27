@@ -109,7 +109,7 @@ const Post = () => {
         showCancelButton : true,
         confirmButtonColor : '#86B3CF',
         cancelButtonColor : '#86B3CF',
-        confirmButtonText : '<a href="doyoung.netlify.app/Sudoku">Play</a>',
+        confirmButtonText : '<a href="/Sudoku">Play</a>',
         customClass : "swal__Custom",
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
@@ -182,8 +182,8 @@ const Post = () => {
               <img className='post__image' to='/Sudoku' onClick={showProject4Modal} src={Sudoku} />
               <div className="post__description">
               
-                {/* <Link to='/Sudoku' className="post__title" >Sudoku</Link> */}
-                <h3 className="post__title" onClick={PlayingSudoku}>Sudoku</h3>
+                <Link to='/Sudoku' className="post__title" >Sudoku</Link>
+                {/* <h3 className="post__title" onClick={PlayingSudoku}>Sudoku</h3> */}
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>React</li>
