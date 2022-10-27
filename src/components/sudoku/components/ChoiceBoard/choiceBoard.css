@@ -1,0 +1,46 @@
+.choice-container {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+  }
+  
+  .choice {
+    width: 55px;
+    height: 30px;
+    padding-top: 5px;
+    margin : 5px;
+    text-align: center;
+    box-shadow: 0 1px 5px var(--section-color-point);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: var(--text-color-mild);
+    color: var(--section-color);
+  }
+  .choice-text{
+    color: var(--section-color);
+    font-weight: var(--font-semi-bold);
+  }
+  .selected {
+    background-color: var(--section-color-point);
+  }
+  .selected-eraser {
+    background: var(--text-color);
+  }
+  
+  .selected p {
+    color: var(--section-color);
+  }
+  
+  .noSelect {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  .noSelect:focus {
+      outline: none !important;
+  }
+  

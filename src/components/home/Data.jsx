@@ -3,6 +3,7 @@ import Smile from './smile.json';
 import lottie from 'lottie-web';
 import "./home.css";
 import Typical from 'react-typical';
+import Memoji from '../../assets/memoji.png'
 
 const Data = () => {
 
@@ -97,6 +98,7 @@ const Data = () => {
 
             <a href="#contact" className="button button--flex">
                 Say Hello
+                {/* <div className='home__memoji' ></div> */}
                 <svg
                     class="button__icon"
                     xmlns="http://www.w3.org/2000/svg"

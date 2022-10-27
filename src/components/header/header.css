@@ -21,7 +21,12 @@
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
+/* .nav__logo::after{
+    content: url("../../assets/memoji.png");
 
+    width: 45px;
+    height: 45px;
+} */
 .nav__list {
     display: flex;
     column-gap: 2rem;

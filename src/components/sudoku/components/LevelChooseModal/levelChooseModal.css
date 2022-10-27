@@ -1,0 +1,104 @@
+.LevelChooseModal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: var(--section-color); */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+.level-container {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  background-color: var(--section-color);
+  box-shadow:var(--section-color-accentuate) 0px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 10px;
+}
+
+.level-container .level-title {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.level-close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.level-close-btn-container button {
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.level-container .Level-level-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 15px;
+  text-align: center;
+  margin: 30px 0;
+
+  visibility: hidden;
+}
+
+.level-container .level-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Level-selection-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Level {
+  max-width: 30%;
+  margin: 30px 0;
+
+  /* border-style: solid;
+  border-width: 2px; */
+  /* box-shadow: var(--section-color-accentuate) 0px 3px 8px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  border-radius: 15px;
+}
+
+.animation-container-Level {
+  height: 60%;
+}
+@media (max-width: 870px) {
+  .Level {
+    max-width: 30%;
+    min-height: 170px;
+    padding: 1px;
+  }
+}
+@media (max-width: 350px) {
+  .level-container .Level-level-body {
+    
+    font-size: 15px;
+    margin: 45px 0px;
+  
+    visibility: hidden;
+  }
+}

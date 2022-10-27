@@ -129,6 +129,7 @@ img {
   --container-color: hsl(var(--hue), var(--sat), 96%);
   --body-color: hsl(var(--hue), var(--sat), 96%);
   --swal-color : hsl(var(--hue), var(--sat), 91%);
+  --section-color-mild : hsl(var(--hue), var(--sat), 88%);
   --section-color : hsl(var(--hue), var(--sat), 96%);
   --section-color-accentuate : hsl(var(--hue), var(--sat), 90%);
   --section-color-point : hsl(var(--hue), var(--sat), 35%);
@@ -136,7 +137,6 @@ img {
   --button-text-color: hsl(var(--hue), var(--sat), 96%);
   --button-color-hover: hsl(var(--hue), var(--sat), 10%);
   --button-text-color-hover: hsl(var(--hue), var(--sat), 96%);
-  
 }
 #dark {
   /*Dark Color mode HSL(hue, saturation, lightness)*/
@@ -146,10 +146,11 @@ img {
   --title-color-dark: hsl(var(--hue), var(--sat), 50%);
   --text-color: hsl(var(--hue), 8%, 85%);
   --text-color-dark: hsl(var(--hue), 8%, 70%);
-  --text-color-mild: hsl(var(--hue), 8%, 30%);
+  --text-color-mild: hsl(var(--hue), 8%, 95%);
   --body-color: hsl(var(--hue), var(--sat), 10%);
   --container-color: hsl(var(--hue), var(--sat), 10%);
   --swal-color : hsl(var(--hue), var(--sat), 85%);
+  --section-color-mild : hsl(var(--hue), var(--sat), 20%);
   --section-color : hsl(var(--hue), var(--sat), 10%);
   --section-color-accentuate : hsl(var(--hue), var(--sat), 15%);
   --section-color-point : rgb(64, 249, 194);
@@ -214,14 +215,14 @@ img {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--button-color);
   color: var(--button-text-color);
-  padding: 1.25rem 2rem;
+  padding: 0.7rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
@@ -271,6 +272,18 @@ img {
 
   width: 100px;
   height: 100px;
+}
+.cursor-follow{
+  position: absolute;
+  background: url(assets/memoji.png) no-repeat 50% 50%;
+  background-size: cover;
+  width: 60px;
+  /* mix-blend-mode: difference; */
+  height: 60px;
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(5px,5px);
 }
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

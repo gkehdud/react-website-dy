@@ -1,0 +1,39 @@
+td {
+    border: 2px solid var(--text-color);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    user-select: none;
+    font-weight : bold;
+    color: var(--text-color);
+  
+  }
+  
+  .right-border {
+    border: 2px solid var(--text-color);
+  }
+  
+  .bottom-border {
+    border: 2px solid var(--text-color);
+  }
+  
+  .cell-modifiable{
+    cursor: pointer;
+    color: #a7a1fffe;
+  }
+  
+  .cell-invalid {
+    background-color: #ff000057;
+  }
+  
+  .cell-hinted{
+    color: red;
+    animation-name: hintAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes hintAnimation {
+    from {background-color: red;}
+    to {background-color: initial;}
+  }

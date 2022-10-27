@@ -67,7 +67,9 @@
   
   /* For medium devices */
   @media screen and (max-width: 768px) {
-    
+    .footer__copy{
+        padding-bottom: 3rem;
+    }
   }
   
   @media screen and (max-width: 576px) {

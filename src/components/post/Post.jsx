@@ -7,10 +7,14 @@ import "aos/dist/aos.css";
 import Package from '../../assets/Package1.png'
 import BuildingRun from '../../assets/QI_Logo.png'
 import Magician from '../../assets/Magician.png'
+import Sudoku from '../../assets/sudoku.png'
 import Project1 from './Project1';
 import Project2 from './Project2';
 import Project3 from './Project3';
 import sorry from "../journeys/sorry.png"
+import { Link } from 'react-router-dom';
+import Game from '../sudoku/Game/Game';
+import { red } from '@mui/material/colors';
 
 const Post = () => {
 
@@ -23,7 +27,9 @@ const Post = () => {
   const [showSideDrawer, setshowSideDrawer] = useState(false);
   const [isModal, setIsModal] = useState(false);
   const ref = useRef();
-
+  
+  const [click, setClick] = useState(false);
+  const closeMobileMenu = () => setClick(!click);
   //  FUNCTION TO HANDLE CLOSE ACTION ON SIDEDRAWER/MODAL
   const sideDrawerClosedHandler = () => {
     setshowSideDrawer(false);
@@ -80,12 +86,41 @@ const Post = () => {
         imageAlt: 'Custom Image',
         timerProgressBar: true,
         timer: 3500,
-        customClass: {
-            popup: 'swal'
+        customClass : "swal__Custom",
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
         },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
     })
-
-};
+  };
+  const PlayingSudoku = () => {
+    Swal.fire({
+        position: 'center',
+        title: "Welcome",
+        text: 'Wanna play?',
+        imageUrl: Sudoku,
+        width : 300,
+        imageWidth: 200,
+        imageHeight: 120,
+        borderradius : '15px',
+        imageAlt: 'Custom Image',
+        showCancelButton : true,
+        confirmButtonColor : '#86B3CF',
+        cancelButtonColor : '#86B3CF',
+        confirmButtonText : '<a href="/Sudoku">Play</a>',
+        customClass : "swal__Custom",
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+    }).then((result) => {
+      
+    })
+  };
   // useEffect(() => {
   //   const isClickedOutside = e =>{
   //     // console.log("isModal : "+isModal);
@@ -139,7 +174,27 @@ const Post = () => {
           <div ref={ref}>
             {showProject3Modal && (<Project3 id='Modal3' closeModal={showProject3} />)}
           </div>
+          {/* <div ref={ref}>
+            {showProject1Modal && (<Game id='Modal1' closeModal={showProject4} />)}
+          </div> */}
           <div data-aos="fade-down" className='post__content grid'>
+          <div className="post__data grid">
+              <img className='post__image' to='/Sudoku' onClick={showProject4Modal} src={Sudoku} />
+              <div className="post__description">
+              
+                {/* <Link to='/Sudoku' className="post__title" >Sudoku</Link> */}
+                <h3 className="post__title" onClick={PlayingSudoku}>Sudoku</h3>
+                <h4 className="post__stack text-xs"></h4>
+                <ui className="tags text-sm">
+                  <li>React</li>
+                  <li>Javascript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ui>
+                <p className="post__story">To study React, and for Iris.</p>
+              </div>
+            </div>
+            
             <div className="post__data grid">
               <img className='post__image' onClick={UnderConstruction} src={Package} />
               <div className="post__description">
@@ -151,7 +206,7 @@ const Post = () => {
                   <li>raspberry pi</li>
                   <li>MySQL</li>
                 </ui>
-                <p className="post__story">Make your package safer. Locking & management system in your mailbox.</p>
+                <p className="post__story">Make your package safe. Locking & management system in your mailbox.</p>
               </div>
             </div>
 
@@ -185,6 +240,7 @@ const Post = () => {
                 <p className="post__story">Using leap motion, make the magic like ice, fire, wind with different finger motions and kill the monsters.</p>
               </div>
             </div>
+            
           </div>
         </div>
       </div>

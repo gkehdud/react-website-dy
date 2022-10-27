@@ -10,36 +10,35 @@
 } */
 .post__content {
     padding: 3rem 3rem 1.5rem 1.5rem;
+    row-gap: 3rem;
 }
 
 .post__data {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 4fr 9fr;
     /* border: 1px solid var(--text-color-mild); */
 }
 
 .post__title {
     cursor: pointer;
     display: flex;
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    font-size: 18px;
 }
 .post__title:hover{
     transform: translate(0.25rem);
-}
-
-.post__content {
-    row-gap: 3rem;
 }
 .post__story{
     font-size: var(--small-font-size);
 }
 .post__image {
-    width: 100%;
-    height: 100%;
-    height: 180px;
+    width: 85%;
+    height: 120px;
     border-radius: 12px;
     border: 2px solid var(--section-color-point);
-    /* justify-self: center;
-    align-self: center; */
+    justify-self: center;
+    align-self: center;
     object-fit: fill;
     filter: brightness(0.8);
 }
@@ -48,6 +47,9 @@
     background-color: var(--section-color-point);
     transform: scale(1.05);
 
+}
+.post__description{
+    align-self: center;
 }
 .post__stack {
     text-align: justify;
@@ -197,7 +199,20 @@
     width: 100%;
     height: 100%;
 }
+.swal__Custom{
+    border-radius: 12px;
+    color: var(--text-color);
+    background-color: white;
+}
+.swal2-styled.swal2-cancel{
+    border-radius: 12px;
+    color: white;
+  }
 
+.swal2-styled.swal2-confirm{
+    border-radius: 12px;
+    color: white;
+  }
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -226,18 +241,24 @@
     }
     .post__content {
         row-gap: 1rem;
-        width: 100%;
+        width: 95%;
         padding: 0.4rem 0 0;
+        margin-inline: auto;
     }
 
     .post__data {
         grid-template-columns: 1fr;
         margin-bottom: var(--mb-2-5);
     }
+    .post__image {
+        width: 100%;
+        height: 150px;
+    }
+    
     .tags li {
         margin-right: 0.3rem;
         font-size: var(--tiny-font-size);
-        padding: 0.2rem 0.2rem;
+        padding: 0.2rem 0.4rem;
     }
     .modal__description{
         padding: .3rem 1rem 0 1rem;

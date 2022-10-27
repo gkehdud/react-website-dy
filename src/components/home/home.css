@@ -87,7 +87,14 @@
     height: 200px;
     animation: profile__animate 8s ease-in-out infinite 1s;
 }
-
+.home__memoji{
+    background: url(../../assets/memoji.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
 @keyframes profile__animate {
     /* 0%{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
