@@ -109,7 +109,7 @@ const Post = () => {
         showCancelButton : true,
         confirmButtonColor : '#86B3CF',
         cancelButtonColor : '#86B3CF',
-        confirmButtonText : '<a href="/Sudoku">Play</a>',
+        confirmButtonText : '<a href="doyoung.netlify.app/Sudoku">Play</a>',
         customClass : "swal__Custom",
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
