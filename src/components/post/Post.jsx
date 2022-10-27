@@ -104,7 +104,6 @@ const Post = () => {
         width : 300,
         imageWidth: 200,
         imageHeight: 120,
-        borderradius : '15px',
         imageAlt: 'Custom Image',
         showCancelButton : true,
         confirmButtonColor : '#86B3CF',
@@ -179,11 +178,11 @@ const Post = () => {
           </div> */}
           <div data-aos="fade-down" className='post__content grid'>
           <div className="post__data grid">
-              <img className='post__image' to='/Sudoku' onClick={showProject4Modal} src={Sudoku} />
+              <img className='post__image' onClick={PlayingSudoku} src={Sudoku} />
               <div className="post__description">
               
-                <Link to='/Sudoku' className="post__title" >Sudoku</Link>
-                {/* <h3 className="post__title" onClick={PlayingSudoku}>Sudoku</h3> */}
+                {/* <Link to='/Sudoku' className="post__title" >Sudoku</Link> */}
+                <h3 className="post__title" onClick={PlayingSudoku}>Sudoku</h3>
                 <h4 className="post__stack text-xs"></h4>
                 <ui className="tags text-sm">
                   <li>React</li>
