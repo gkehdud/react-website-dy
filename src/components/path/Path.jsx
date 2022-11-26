@@ -82,7 +82,7 @@ const Path = () => {
                                     Created an iPad app for the sales team to send order through a private server, increasing the rate of processing sales and cut back on necessary manual labor.
                                     </span>
                                     <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>
-                                    Implemented a barcode scanner for the warehouse and a fully digitized inventory management by LOT number system as well as automation of delivery route planning with Google Map API to cut back on half of the AR and Logistics team members and time unnecessarily spent online.
+                                    Implemented a barcode scanner iPod app for the warehouse and a fully digitized inventory management by LOT number system as well as automation of delivery route planning with Google Map API to cut back on half of the AR and Logistics team members and time unnecessarily spent online.
                                     </span>
                                     <span className="path__datatext-underline"><i class="uil uil-angle-right-b"></i>
                                     Duplicated the windows server with a Windows Server Virtual Machine in LA to safeguard and back up our server to minimize date loss in case of an emergency

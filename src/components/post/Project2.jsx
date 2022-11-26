@@ -12,7 +12,7 @@ import image3 from '../../assets/PackageSystem.png'
 import image4 from '../../assets/PackageSystem2.png'
 import QI_Final from '../../assets/QI_Final.pptx'
 import QI_Documentaion from '../../assets/QI_Documentation.docx'
-import CV from "../../assets/RESUME_DOYOUNGHA(EN).pdf";
+import CV from "../../assets/RESUME_DOYOUNGHA.pdf";
 
 const Project2 = ({ closeModal }) => {
     return (

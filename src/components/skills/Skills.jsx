@@ -71,7 +71,7 @@ const Skills = () => {
         </span>
         <p className="skills__description">
           <span className="skills__datatext">
-            I've developed ERP development for 4 years, and I'm into web development thesedays.<br></br> I'm eager to learn more in this fast paced industry.
+            I've developed ERP development for 3+ years, and I'm into web,app development thesedays.<br></br> I'm eager to learn more in this fast paced industry.
 
           </span>
           {/* since 코딩 공부를 시작, 대학교에서는 자바와 c#를 주로 사용하여 프로젝트를 개발하였고,

@@ -1,6 +1,6 @@
 import React  from 'react'
 import './about.css';
-import CV from "../../assets/RESUME_DOYOUNGHA(EN).pdf";
+import CV from "../../assets/RESUME_DOYOUNGHA.pdf";
 
 // import { useInView } from 'react-intersection-observer';
 // import { Color } from 'three';
@@ -37,8 +37,8 @@ const About = () => {
                         {/* <i class="uil uil-football" className={SoccerIsVisible ? 'soccer animateSoccer' : ''} ref={soccerRef} style={{ fontSize: '150px' }} >
                     </i> */}
                         {/* <p>{myElementIsVisible ? 'Yes' : 'No'}</p> */}
-                        <p className="about__description">I'm a Backend Developer from Korea and currently living in Queens, NY.
-                            <br /><br />Developed ERP system, Apps for wms, sales. Recently I'm really into developing website and learning Frontend.
+                        <p className="about__description">I'm a Software Developer from Korea, based in Queens, NY.
+                            <br /><br />I Developed ERP system, iOS Apps for wms, sales. Recently I'm really into developing website and learning Frontend.
                             <br /><br />Fan of soccer, TV series and animals. Especially cat.
                             {/* <br /><br />Interested in the entire backend specturm especially database,sql and working on ambitious projects with positive people. */}
                             {/* <br/><br/>Not all those who wander are lost:) */}
